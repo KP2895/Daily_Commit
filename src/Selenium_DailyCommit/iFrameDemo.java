@@ -38,6 +38,8 @@ public class iFrameDemo {
 			//to switch to main frame=>
 			driver.switchTo().defaultContent();
 			driver.findElement(By.xpath("//a[text()='Button']")).click();
+			
+			driver.close();
 
 			
 			
