@@ -39,7 +39,7 @@ public class iFrameDemo {
 			driver.switchTo().defaultContent();
 			driver.findElement(By.xpath("//a[text()='Button']")).click();
 			
-			driver.close();
+			driver.quit();
 
 			
 			
