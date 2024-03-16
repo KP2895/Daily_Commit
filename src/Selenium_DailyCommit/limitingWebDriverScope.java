@@ -84,7 +84,7 @@ public class limitingWebDriverScope {
 		
 		
 		
-	//	driver.quit();
+	driver.close();
 		
 		
 		
