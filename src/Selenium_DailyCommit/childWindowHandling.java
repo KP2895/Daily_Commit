@@ -6,6 +6,7 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
@@ -21,7 +22,7 @@ public class childWindowHandling {
 		
 		 driver =new ChromeDriver();
 		
-	}
+	} 
 	
 	void WindowHandling() {
 		
@@ -40,21 +41,20 @@ public class childWindowHandling {
 		driver.manage().window().maximize();
 		WebElement wb=driver.findElement(By.cssSelector("p[class='im-para red']"));
 		
-		String[] Email1=wb.getText().split("@");
-		String[] Email2=Email1[1].split(" ");
-		String [] Email3=Email2[0].split(".");
-		String Email=Email3[0];
+//		String[] Email1=wb.getText().split("@");
+//		String[] Email2=Email1[1].split(" ");
+//		String [] Email3=Email2[0].split(".");
+//		//String Email=Email3[0];
+//		
 		
 		
-		
-		System.out.println("EmailId:"+Email);
-		
+//		System.out.println("EmailId:"+Email);
+//		
 		driver.switchTo().window(parent);
-		driver.findElement(By.cssSelector("input[id=username]")).sendKeys(Email);
+		driver.findElement(By.cssSelector("input[id=username]")).sendKeys("rahulshettyacademy");
+
 		driver.findElement(By.cssSelector("input[id=password]")).sendKeys("learning");
 		
-		//driver.findElement(By.xpath("(//span[@class='checkmark'])[2]")).click();
-		//driver.findElement(By.cssSelector("button[id=okayBtn]")).click();
 		
 		
 		WebElement w1=driver.findElement(By.cssSelector("select[class='form-control']"));
@@ -65,14 +65,7 @@ public class childWindowHandling {
 		driver.findElement(By.cssSelector("input[id=\"signInBtn\"]")).click();
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
+	
 	}
 	
 	
