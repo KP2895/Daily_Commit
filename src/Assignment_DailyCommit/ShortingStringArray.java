@@ -28,11 +28,7 @@ public class ShortingStringArray {
 		}
 		
 		System.out.println("count with letter A: " +count);
-		
-		
-		
-		
-		
+				
 	}
 
 }
